@@ -20,8 +20,20 @@ function incrementCounter() {
 }
 
 function decrementCounter() {
-    const numberElement = document.querySelector("#counter")
+  const numberElement = document.querySelector("#counter")
   let num = parseInt(numberElement.textContent)
   num = num - 1
   numberElement.textContent = num
+}
+
+function resetCounter() {
+  const numberElement = document.querySelector("#counter")
+  numberElement.textContent = 0
+}
+
+function writeText() {
+  const inputElem = document.querySelector("#input")
+  const outputElem = document.querySelector("#output")
+  const outText = outputElem.textContent
+  outputElem.textContent = outText + "\n" + inputElem.value
 }
