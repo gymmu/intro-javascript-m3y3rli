@@ -4,7 +4,7 @@ function sayHello() {
 
 function changeBackground() {
   const body = document.querySelector("body")
-  body.style.backgroundColor = "purple"
+  body.style.backgroundColor = "purple" 
 }
 
 function deleteText() {
@@ -36,4 +36,8 @@ function writeText() {
   const outputElem = document.querySelector("#output")
   const outText = outputElem.textContent
   outputElem.textContent = outText + "\n" + inputElem.value
+}
+
+function clickBackground() {
+  
 }
